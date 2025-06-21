@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haroun Boubekeur - Professional Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Warm Neutrals (Cream: #FDFBF7, Charcoal: #333D42, Muted Teal: #26726C) -->
+    <style>
+        body{font-family:'Inter',sans-serif;background-color:#FDFBF7;color:#333D42;}
+        .accent-color{color:#26726C;}
+        .bg-accent-color{background-color:#26726C;}
+        .border-accent-color{border-color:#26726C;}
+        .skill-card{transition:transform .2s ease-in-out,box-shadow .2s ease-in-out;}
+        .skill-card:hover{transform:translateY(-5px);box-shadow:0 10px 20px -5px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);}
+        .nav-link-hover:hover{color:#26726C;}
+        .header-shadow{box-shadow:0 4px 6px -1px rgba(0,0,0,.05),0 2px 4px -1px rgba(0,0,0,.03);}
+    </style>
+</head>
+<body class="antialiased">
+    <header id="main-header" class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200 transition-shadow duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold accent-color">Haroun Boubekeur</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#summary" class="nav-link-hover transition-colors">Summary</a>
+                <a href="#skills" class="nav-link-hover transition-colors">Skills</a>
+                <a href="#experience" class="nav-link-hover transition-colors">Experience</a>
+                <a href="#contact" class="nav-link-hover transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                 <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 py-2">
+            <a href="#summary" class="block py-3 px-6 text-base hover:bg-gray-100 transition-colors">Summary</a>
+            <a href="#skills" class="block py-3 px-6 text-base hover:bg-gray-100 transition-colors">Skills</a>
+            <a href="#experience" class="block py-3 px-6 text-base hover:bg-gray-100 transition-colors">Experience</a>
+            <a href="#contact" class="block py-3 px-6 text-base hover:bg-gray-100 transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+        <section class="text-center mb-20 md:mb-28">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">Haroun Boubekeur</h1>
+            <p class="text-xl sm:text-2xl md:text-3xl text-gray-600 mt-4">Proactive & Resourceful Professional</p>
+        </section>
+
+        <section id="summary" class="mb-20 md:mb-28 max-w-4xl mx-auto">
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg border border-gray-100">
+                 <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">My Objective</h2>
+                 <p class="text-center text-lg md:text-xl leading-relaxed text-gray-700 border-l-4 border-accent-color pl-6 italic">
+                    A highly resourceful and detail-oriented individual with a strong aptitude for technology and a proven ability to solve complex problems independently. Eager to leverage exceptional organizational, communication, and administrative skills to contribute to a dynamic and growth-oriented environment. Committed to continuous learning and professional development.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-20 md:mb-28 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">My Capabilities</h2>
+            <div class="mb-14">
+                <h3 class="text-2xl font-semibold mb-8 text-center text-gray-700">Professional Competencies</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">✉️</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Effective Communication</h4>
+                        <p class="text-gray-600 text-sm">Proficient in professional correspondence, crafting clear emails, and facilitating virtual meetings.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">📅</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Organizational Skills</h4>
+                        <p class="text-gray-600 text-sm">Adept at meticulous scheduling, efficient calendar management, and precise document preparation.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">📊</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Data Management & Research</h4>
+                        <p class="text-gray-600 text-sm">Skilled in accurate online information gathering, data compilation, and basic spreadsheet reporting.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">💻</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Technology Proficiency</h4>
+                        <p class="text-gray-600 text-sm">Strong foundational knowledge in Computer Science and coding; comfortable with MS Office, Google Workspace, and various digital tools.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">✍️</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Content Support</h4>
+                        <p class="text-gray-600 text-sm">Capable of assisting with content drafting, editing, and organizing digital media assets.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">🔒</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Attention to Detail</h4>
+                        <p class="text-gray-600 text-sm">Ensures accuracy and thoroughness in all tasks, maintaining high quality standards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-semibold mb-8 text-center text-gray-700">Key Qualities</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">💡</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Problem-Solving</h4>
+                        <p class="text-gray-600 text-sm">Resourceful in identifying challenges and implementing effective, practical solutions.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">🚀</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Proactive Approach</h4>
+                        <p class="text-gray-600 text-sm">Takes initiative to anticipate needs and contribute effectively to team objectives.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">💪</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Strong Work Ethic</h4>
+                        <p class="text-gray-600 text-sm">Dedicated to achieving goals, demonstrating unwavering commitment and perseverance.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">🧠</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Continuous Learner</h4>
+                        <p class="text-gray-600 text-sm">Eager to acquire new knowledge and skills, driven by a keen intellectual curiosity.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">🤝</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Professionalism</h4>
+                        <p class="text-gray-600 text-sm">Upholds the highest standards of conduct, communication, and quality in all interactions.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm skill-card">
+                        <div class="text-4xl mb-4 accent-color">🔄</div>
+                        <h4 class="font-bold text-xl mb-2 text-gray-800">Adaptability</h4>
+                        <p class="text-gray-600 text-sm">Flexible and quick to adjust to new challenges, environments, and evolving workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-20 md:mb-28 max-w-4xl mx-auto">
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg border border-gray-100">
+                <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Relevant Experience & Projects</h2>
+                <ul class="list-disc list-inside text-gray-700 space-y-3">
+                    <li>
+                        <span class="font-semibold">Interactive Professional Profile Website (Self-Developed):</span>
+                        Designed and developed this CV website from scratch, demonstrating frontend skills, foundational Computer Science principles, HTML, Tailwind CSS, and JavaScript. Managed the project lifecycle from concept to deployment, actively solving challenges related to responsive layout, user experience, and dynamic content presentation.
+                    </li>
+                    <li class="mt-4">
+                        <span class="font-semibold">Willingness to Learn:</span> Highly motivated and quick to acquire new tools, technologies, and processes as needed for any role, demonstrating a strong capacity for rapid skill acquisition.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="languages" class="mb-20 md:mb-28 max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-12 text-center text-gray-800">Languages</h2>
+          <div class="flex flex-col md:flex-row justify-center gap-8 max-w-2xl mx-auto">
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex-1 text-center skill-card">
+                <div class="text-5xl mb-2 accent-color">🇬🇧</div>
+                <h3 class="text-2xl font-bold accent-color mb-2">English</h3>
+                <p class="text-gray-600 text-lg">Fully Fluent</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex-1 text-center skill-card">
+                <div class="text-5xl mb-2 accent-color">🇩🇿</div>
+                <h3 class="text-2xl font-bold accent-color mb-2">Arabic</h3>
+                <p class="text-gray-600 text-lg">Native Speaker</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12 text-center">
+          <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+          <p class="text-gray-300 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">I am eager to contribute my skills and dedication to a forward-thinking organization. Reach out to discuss how I can help your team succeed and for any inquiries.</p>
+          <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8">
+            <a href="mailto:haronboubekeur3@gmail.com" class="bg-accent-color hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 text-lg shadow-md">
+              <span>📧</span>
+              <span>Email Me</span>
+            </a>
+            <a href="tel:+213673408870" class="border-2 border-accent-color hover:bg-accent-color hover:text-white text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3 text-lg shadow-md">
+              <span>📱</span>
+              <span>Call Me</span>
+            </a>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 py-4">
+          <p class="text-center text-gray-400 text-sm">&copy; 2025 Haroun Boubekeur. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            const mainHeader = document.getElementById('main-header');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    mainHeader.classList.add('header-shadow');
+                } else {
+                    mainHeader.classList.remove('header-shadow');
+                }
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            const sections = document.querySelectorAll('section');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                section.classList.add('opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
